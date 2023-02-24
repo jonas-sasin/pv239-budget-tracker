@@ -8,12 +8,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func addIncomeButtonClick(_ sender: Any) {
+        performSegue(withIdentifier: "income", sender: self)
+    }
+    
+    @IBAction func addExpenseButtonClick(_ sender: Any) {
+        performSegue(withIdentifier: "spending", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "income" {
+            let destinationVC = segue.destination as! AddViewController
+            destinationVC.labelText = "Add income"
+        }
+        if segue.identifier == "spending" {
+            let destinationVC = segue.destination as! AddViewController
+            destinationVC.labelText = "Add spending"
+        }
+    }
+    
 }
 
