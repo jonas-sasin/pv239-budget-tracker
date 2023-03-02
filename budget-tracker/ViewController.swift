@@ -23,13 +23,14 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "income" {
             let destinationVC = segue.destination as! AddViewController
-            destinationVC.labelText = "Add income"
+            destinationVC.labelText = "income"
         }
         if segue.identifier == "spending" {
             let destinationVC = segue.destination as! AddViewController
-            destinationVC.labelText = "Add spending"
+            destinationVC.labelText = "spending"
         }
     }
     
