@@ -36,4 +36,19 @@ class AddViewController: UIViewController {
             recurringSwitchLabel.text = "Recurring " + labelText
         }
     }
+    
+    @IBAction func manageCategoriesClick(_ sender: Any) {
+        performSegue(withIdentifier: "category", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "category" {
+            let destinationVC = segue.destination as! ManageCategoriesController
+            if let labelText = labelText {
+                destinationVC.labelText = "Manage " + labelText + " categories"
+            }
+        }
+    }
+    
 }

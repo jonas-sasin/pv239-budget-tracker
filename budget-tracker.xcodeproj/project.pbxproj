@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03A5DBA29B1252F009007BF /* ManageCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A5DB929B1252F009007BF /* ManageCategoriesController.swift */; };
 		C09538AF29A8E9780036865B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09538AE29A8E9780036865B /* AddViewController.swift */; };
 		C0AED5CD29A8D815005674EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AED5CC29A8D815005674EE /* AppDelegate.swift */; };
 		C0AED5CF29A8D815005674EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AED5CE29A8D815005674EE /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C03A5DB929B1252F009007BF /* ManageCategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCategoriesController.swift; sourceTree = "<group>"; };
 		C09538AE29A8E9780036865B /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		C0AED5C929A8D815005674EE /* budget-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "budget-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AED5CC29A8D815005674EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				C0AED5D529A8D816005674EE /* Assets.xcassets */,
 				C0AED5D729A8D816005674EE /* LaunchScreen.storyboard */,
 				C0AED5DA29A8D816005674EE /* Info.plist */,
+				C03A5DB929B1252F009007BF /* ManageCategoriesController.swift */,
 			);
 			path = "budget-tracker";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				C0AED5D129A8D815005674EE /* ViewController.swift in Sources */,
 				C0AED5CD29A8D815005674EE /* AppDelegate.swift in Sources */,
+				C03A5DBA29B1252F009007BF /* ManageCategoriesController.swift in Sources */,
 				C09538AF29A8E9780036865B /* AddViewController.swift in Sources */,
 				C0AED5CF29A8D815005674EE /* SceneDelegate.swift in Sources */,
 			);

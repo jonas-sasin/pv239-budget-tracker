@@ -277,7 +277,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Manage categories"/>
                                 <connections>
-                                    <segue destination="qiI-zT-Kie" kind="showDetail" id="JZn-W1-xFN"/>
+                                    <action selector="manageCategoriesClick:" destination="jz7-mU-PQq" eventType="touchUpInside" id="PUj-0H-ugZ"/>
+                                    <segue destination="qiI-zT-Kie" kind="showDetail" identifier="category" id="JZn-W1-xFN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -296,10 +297,10 @@
             </objects>
             <point key="canvasLocation" x="1313.7404580152672" y="97.887323943661983"/>
         </scene>
-        <!--View Controller-->
+        <!--Manage Categories Controller-->
         <scene sceneID="2H1-d2-vNV">
             <objects>
-                <viewController id="qiI-zT-Kie" sceneMemberID="viewController">
+                <viewController id="qiI-zT-Kie" customClass="ManageCategoriesController" customModule="budget_tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LXx-Nn-CDo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,8 +310,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-Wr-sck">
-                                <rect key="frame" x="175" y="81" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-Wr-sck">
+                                <rect key="frame" x="47" y="81" width="302" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -332,6 +333,9 @@
                         <viewLayoutGuide key="safeArea" id="gUh-hg-OK6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="manageCategoryLabel" destination="3Ra-Wr-sck" id="2w8-br-9Ee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFa-2D-4MX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
