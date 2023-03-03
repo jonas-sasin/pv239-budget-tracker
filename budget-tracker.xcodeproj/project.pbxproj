@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C03A5DBA29B1252F009007BF /* ManageCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A5DB929B1252F009007BF /* ManageCategoriesController.swift */; };
 		C09538AF29A8E9780036865B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09538AE29A8E9780036865B /* AddViewController.swift */; };
+		C0973AD729B21C4400ABDEC1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0973AD629B21C4400ABDEC1 /* Category.swift */; };
+		C0973AD929B21C6400ABDEC1 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0973AD829B21C6400ABDEC1 /* Transaction.swift */; };
+		C0973ADB29B21CA200ABDEC1 /* RecurringRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0973ADA29B21CA200ABDEC1 /* RecurringRecord.swift */; };
 		C0AED5CD29A8D815005674EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AED5CC29A8D815005674EE /* AppDelegate.swift */; };
 		C0AED5CF29A8D815005674EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AED5CE29A8D815005674EE /* SceneDelegate.swift */; };
 		C0AED5D129A8D815005674EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AED5D029A8D815005674EE /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		C03A5DB929B1252F009007BF /* ManageCategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCategoriesController.swift; sourceTree = "<group>"; };
 		C09538AE29A8E9780036865B /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		C0973AD629B21C4400ABDEC1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C0973AD829B21C6400ABDEC1 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		C0973ADA29B21CA200ABDEC1 /* RecurringRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringRecord.swift; sourceTree = "<group>"; };
 		C0AED5C929A8D815005674EE /* budget-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "budget-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AED5CC29A8D815005674EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0AED5CE29A8D815005674EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0973AD529B21C3500ABDEC1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C0973AD629B21C4400ABDEC1 /* Category.swift */,
+				C0973AD829B21C6400ABDEC1 /* Transaction.swift */,
+				C0973ADA29B21CA200ABDEC1 /* RecurringRecord.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		C0AED5C029A8D815005674EE = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +76,7 @@
 		C0AED5CB29A8D815005674EE /* budget-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				C0973AD529B21C3500ABDEC1 /* model */,
 				C0AED5CC29A8D815005674EE /* AppDelegate.swift */,
 				C0AED5CE29A8D815005674EE /* SceneDelegate.swift */,
 				C0AED5D029A8D815005674EE /* ViewController.swift */,
@@ -144,11 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0973ADB29B21CA200ABDEC1 /* RecurringRecord.swift in Sources */,
+				C0973AD929B21C6400ABDEC1 /* Transaction.swift in Sources */,
 				C0AED5D129A8D815005674EE /* ViewController.swift in Sources */,
 				C0AED5CD29A8D815005674EE /* AppDelegate.swift in Sources */,
 				C03A5DBA29B1252F009007BF /* ManageCategoriesController.swift in Sources */,
 				C09538AF29A8E9780036865B /* AddViewController.swift in Sources */,
 				C0AED5CF29A8D815005674EE /* SceneDelegate.swift in Sources */,
+				C0973AD729B21C4400ABDEC1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
