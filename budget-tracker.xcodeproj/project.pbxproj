@@ -18,6 +18,8 @@
 		C0AED5D429A8D815005674EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AED5D229A8D815005674EE /* Main.storyboard */; };
 		C0AED5D629A8D816005674EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AED5D529A8D816005674EE /* Assets.xcassets */; };
 		C0AED5D929A8D816005674EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AED5D729A8D816005674EE /* LaunchScreen.storyboard */; };
+		C0FC24C129BB4C5E00974997 /* budget-tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0FC24BF29BB4C5E00974997 /* budget-tracker.xcdatamodeld */; };
+		C0FC24C429BB4FB600974997 /* PokusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC24C229BB4FB600974997 /* PokusTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C0AED5D529A8D816005674EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0AED5D829A8D816005674EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0AED5DA29A8D816005674EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0FC24C029BB4C5E00974997 /* budget-tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "budget-tracker.xcdatamodel"; sourceTree = "<group>"; };
+		C0FC24C229BB4FB600974997 /* PokusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokusTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 				C0973AD629B21C4400ABDEC1 /* Category.swift */,
 				C0973AD829B21C6400ABDEC1 /* Transaction.swift */,
 				C0973ADA29B21CA200ABDEC1 /* RecurringRecord.swift */,
+				C0FC24C229BB4FB600974997 /* PokusTableViewCell.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -86,6 +91,7 @@
 				C0AED5D729A8D816005674EE /* LaunchScreen.storyboard */,
 				C0AED5DA29A8D816005674EE /* Info.plist */,
 				C03A5DB929B1252F009007BF /* ManageCategoriesController.swift */,
+				C0FC24BF29BB4C5E00974997 /* budget-tracker.xcdatamodeld */,
 			);
 			path = "budget-tracker";
 			sourceTree = "<group>";
@@ -163,9 +169,11 @@
 			files = (
 				C0973ADB29B21CA200ABDEC1 /* RecurringRecord.swift in Sources */,
 				C0973AD929B21C6400ABDEC1 /* Transaction.swift in Sources */,
+				C0FC24C429BB4FB600974997 /* PokusTableViewCell.swift in Sources */,
 				C0AED5D129A8D815005674EE /* ViewController.swift in Sources */,
 				C0AED5CD29A8D815005674EE /* AppDelegate.swift in Sources */,
 				C03A5DBA29B1252F009007BF /* ManageCategoriesController.swift in Sources */,
+				C0FC24C129BB4C5E00974997 /* budget-tracker.xcdatamodeld in Sources */,
 				C09538AF29A8E9780036865B /* AddViewController.swift in Sources */,
 				C0AED5CF29A8D815005674EE /* SceneDelegate.swift in Sources */,
 				C0973AD729B21C4400ABDEC1 /* Category.swift in Sources */,
@@ -394,6 +402,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C0FC24BF29BB4C5E00974997 /* budget-tracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C0FC24C029BB4C5E00974997 /* budget-tracker.xcdatamodel */,
+			);
+			currentVersion = C0FC24C029BB4C5E00974997 /* budget-tracker.xcdatamodel */;
+			path = "budget-tracker.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C0AED5C129A8D815005674EE /* Project object */;
 }
